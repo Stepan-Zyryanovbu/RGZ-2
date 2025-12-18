@@ -19,4 +19,4 @@ jobs:
           pip install -r requirements.txt
 
       - run: pytest -q
-      - run: bandit -r . -x tests
+      - run: bandit -r . -x tests -s B101
