@@ -39,7 +39,7 @@ def weather():
 
 @app.errorhandler(429)
 def too_many(_e):
-    # Flask-Limiter обычно сам ставит Retry-After (секунды)
+    # Flask-Limiter
     return jsonify({"error": "too many requests", "message": "try later"}), 429
 
 
